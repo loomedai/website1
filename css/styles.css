@@ -1,0 +1,70 @@
+* { /* Gælder alt på hele siden */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+}
+
+/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+}
+
+ul, ol {
+    margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+}
+
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+
+.navigatiuon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palegreen;
+    height: 50px;
+}
+
+.navigatiuon a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    padding: 1rem;
+    min-height: calc(100vh - 50px - 100px);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: palegreen;
+}
+
+.footer a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 5px 0;
+}
